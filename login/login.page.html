@@ -1,0 +1,104 @@
+<ion-content class="background">
+  <div>
+    <ion-img
+      class="perrito"
+      src="assets/img/PerritoLogin2.png"
+      style="
+        width: 240px;
+        height: 200px;
+        border-radius: 95px;
+        box-shadow: 0px -12px 12px rgba(21, 65, 72, 0.09);
+        margin: auto;
+        position: relative;
+        top: 4em;
+      "
+    >
+    </ion-img>
+  </div>
+  <form class="formCentro">
+    <ion-img
+      class="perrito"
+      src="assets/img/iconoLogin.png"
+      style="
+        top: 5%;
+        width: 10%;
+        height: 10%;
+        margin: auto;
+        margin-bottom: 5%;
+        position: relative;
+      "
+    >
+    </ion-img>
+    <ion-item>
+      <ion-input placeholder="Usuario">
+        <ion-icon slot="start" name="mail"></ion-icon>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Contraseña" type="password">
+        <ion-icon slot="start" name="eye-off"></ion-icon>
+      </ion-input>
+    </ion-item>
+    <ion-button
+      class="botonLogin"
+      (click)="comenzar()"
+      expand="full"
+      shape="round"
+      >Ingresar</ion-button
+    >
+    <ion-text color="ligth">
+      <p class="ingresaCon" style="font-size: 13px; color: #7f7f7f;">
+        O ingresa con
+      </p>
+      <ion-row class="ingresaCon">
+        <ion-img
+          class="perrito"
+          routerLink="../home"
+          src="assets/img/facebook.png"
+          style="
+            width: 6%;
+            height: 6%;
+            margin: auto;
+            margin-bottom: 5%;
+            position: relative;
+          "
+        >
+        </ion-img>
+        <ion-img
+          class="perrito"
+          routerLink="../home"
+          src="assets/img/twitter.png"
+          style="
+            width: 10%;
+            height: 10%;
+            margin: auto;
+            margin-bottom: 5%;
+            position: relative;
+          "
+        >
+        </ion-img>
+        <ion-img
+          class="perrito"
+          routerLink="../home"
+          src="assets/img/google-plus.png"
+          style="
+            width: 9%;
+            height: 9%;
+            margin: auto;
+            margin-bottom: 5%;
+            position: relative;
+          "
+        >
+        </ion-img>
+      </ion-row>
+    </ion-text>
+  </form>
+
+  <ion-row class="registrate">
+    <ion-text color="ligth">
+      <p style="color: #7f7f7f;">
+        No tienes cuenta aun? <a routerLink="../home"> Registrate</a>
+      </p>
+    </ion-text>
+  </ion-row>
+</ion-content>
